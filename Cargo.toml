@@ -1,0 +1,9 @@
+[package]
+name = "converter"
+version = "0.1.0"
+authors = ["conorburke <cjburke89@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+calamine = "0.15.3"
+csv = "1.0.5"
