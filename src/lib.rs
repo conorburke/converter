@@ -8,7 +8,8 @@ pub mod convert {
 pub mod gets {
     #[derive(Debug)]
     pub struct Input {
-        filename: String,
+        pub filename: String,
+        pub outputname: String
     }
 
     // fn read_inputs(args: &[String]) -> Input {
@@ -20,8 +21,9 @@ pub mod gets {
     impl Input {
         pub fn new(args: &[String]) -> Input {
             let filename = args[1].clone();
+            let outputname = args[2].clone();
 
-            Input { filename }
+            Input { filename, outputname }
         }
     }
 }
